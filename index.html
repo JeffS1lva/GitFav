@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="js/main.js" defer></script>
+    <title>Git-Favorites</title>
+</head>
+
+<body>
+    <div class="app">
+        <header>
+            <img class="logo" src="src/logo.svg" alt="logo git-fav">
+            <div class="search">
+                <label class="sr-only" for="search-input">Digite o Github username que quer favoritar.</label>
+                <input type="text" id="search-input" placeholder="Digite o Github username que quer favoritar.">
+            </div>
+            <div class="favorit">
+                <button type="submit"><img class="add" src="src/add.svg" alt="">favoritar</button>
+            </div>
+        </header>
+        <div class="wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Usuários</th>
+                        <th>Repositorios</th>
+                        <th>Followers</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="users">
+                            <img src="https://github.com/JeffS1lva.png" alt="Imagem de Perfil Jefferson">
+                            <a href="https://github.com/maykbrito" target="_blank">
+                                <p>Jeff Silva</p>
+                                <span>/jeffS1lva</span>
+                            </a>
+                        </td>
+                        <td class="repositories">
+                            20
+                        </td>
+                        <td class="followers">
+                            10
+                        </td>
+                        <td>
+                            <button class="remove">Remover</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
